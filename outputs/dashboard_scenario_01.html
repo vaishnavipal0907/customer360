@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Customer 360 — scenario_01</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 2rem; background: #fafafa; color: #222; }
+  h1 { font-size: 1.3rem; }
+  table { border-collapse: collapse; width: 100%; margin-top: 1rem; }
+  th, td { border: 1px solid #ddd; padding: 6px 10px; font-size: 0.85rem; text-align: left; vertical-align: top; }
+  th { background: #f0f0f0; position: sticky; top: 0; }
+  tr.changed { background: #fff8e1; }
+  .band-low { color: #888; }
+  .band-medium { color: #b8860b; font-weight: 600; }
+  .band-high { color: #c0392b; font-weight: 700; }
+  .action-no_action { color: #888; }
+  .hitl-escalated, .hitl-human_approved, .hitl-human_rejected, .hitl-human_modified { font-weight: 600; }
+  .notes { max-width: 480px; font-size: 0.8rem; color: #444; }
+  .summary { margin: 1rem 0; padding: 0.75rem; background: #eef; border-radius: 6px; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+  <h1>Customer 360 — scenario_01</h1>
+  <div class="summary">74 daily checkpoints, 4 state/action changes. Final: <b>medical_hardship</b> (high) &rarr; <b>support_intervention</b></div>
+  <table>
+    <tr><th>Date</th><th>State</th><th>Confidence</th><th>Action</th><th>Subtype</th><th>HITL</th><th>Notes</th></tr>
+    <tr class="changed">
+  <td>2026-02-01</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-02</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-03</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-04</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-05</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-06</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-07</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-08</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-09</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="">
+  <td>2026-02-10</td>
+  <td>no_significant_event</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. No signals above threshold.</td>
+</tr>
+<tr class="changed">
+  <td>2026-02-11</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.6 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6).</td>
+</tr>
+<tr class="">
+  <td>2026-02-12</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.6 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6).</td>
+</tr>
+<tr class="">
+  <td>2026-02-13</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-14</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-15</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-16</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-17</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-18</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-19</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-20</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 0.9 from 1 agent(s) [spend_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-02-21</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-22</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-23</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-24</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-25</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-26</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-27</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-02-28</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-03-01</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-03-02</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-03-03</td>
+  <td>medical_hardship</td>
+  <td class="band-low">low</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Below action threshold. medical_hardship scored 1.1 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (0.6), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="changed">
+  <td>2026-03-04</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 1.5 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-03-05</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 1.5 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-03-06</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 1.5 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), spend_spike:pharmacy (0.3), income_drop (0.21).</td>
+</tr>
+<tr class="">
+  <td>2026-03-07</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-08</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-09</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-10</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-11</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-12</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-13</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-14</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-15</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.3).</td>
+</tr>
+<tr class="">
+  <td>2026-03-16</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.29).</td>
+</tr>
+<tr class="">
+  <td>2026-03-17</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.29).</td>
+</tr>
+<tr class="">
+  <td>2026-03-18</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.28).</td>
+</tr>
+<tr class="">
+  <td>2026-03-19</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.28).</td>
+</tr>
+<tr class="">
+  <td>2026-03-20</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.0 from 2 agent(s) [spend_agent, transaction_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), spend_spike:pharmacy (0.27).</td>
+</tr>
+<tr class="">
+  <td>2026-03-21</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.5 from 3 agent(s) [spend_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), search_theme:medical (0.48), spend_spike:pharmacy (0.27).</td>
+</tr>
+<tr class="">
+  <td>2026-03-22</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.5 from 3 agent(s) [spend_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), search_theme:medical (0.48), spend_spike:pharmacy (0.27).</td>
+</tr>
+<tr class="">
+  <td>2026-03-23</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.4 from 3 agent(s) [spend_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), search_theme:medical (0.48), spend_spike:pharmacy (0.26).</td>
+</tr>
+<tr class="">
+  <td>2026-03-24</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.4 from 3 agent(s) [spend_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), search_theme:medical (0.48), spend_spike:pharmacy (0.26).</td>
+</tr>
+<tr class="">
+  <td>2026-03-25</td>
+  <td>medical_hardship</td>
+  <td class="band-medium">medium</td>
+  <td class="action-no_action">no_action</td>
+  <td>-</td>
+  <td class="hitl-auto_approved">auto_approved</td>
+  <td class="notes">Watching, not enough corroboration to act yet. medical_hardship scored 2.4 from 3 agent(s) [spend_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), income_drop (0.7), search_theme:medical (0.48), spend_spike:pharmacy (0.25).</td>
+</tr>
+<tr class="changed">
+  <td>2026-03-26</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-human_approved">human_approved</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-03-27</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-03-28</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-03-29</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-03-30</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-03-31</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-01</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-02</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-03</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-04</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-05</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-06</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-07</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-08</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-09</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: spend_spike:healthcare (1.0), support_theme:medical (1.0), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-10</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.4 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: support_theme:medical (1.0), spend_spike:healthcare (0.98), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-11</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.3 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: support_theme:medical (1.0), spend_spike:healthcare (0.97), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-12</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.6 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: support_theme:medical (1.0), spend_spike:healthcare (0.95), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-13</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.6 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: support_theme:medical (1.0), spend_spike:healthcare (0.94), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-14</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.6 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: support_theme:medical (1.0), spend_spike:healthcare (0.93), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+<tr class="">
+  <td>2026-04-15</td>
+  <td>medical_hardship</td>
+  <td class="band-high">high</td>
+  <td class="action-support_intervention">support_intervention</td>
+  <td>medical_hardship_payment_plan</td>
+  <td class="hitl-escalated">escalated</td>
+  <td class="notes">medical_hardship scored 3.6 from 4 agent(s) [spend_agent, support_agent, transaction_agent, usage_agent]. Key evidence: support_theme:medical (1.0), spend_spike:healthcare (0.91), income_drop (0.7), search_theme:medical (0.48).</td>
+</tr>
+  </table>
+</body>
+</html>

@@ -7,7 +7,8 @@ class EventStore:
     def __init__(self):
         self.by_customer = {}       # customer_id -> list of events
         self.seen_ids = set()       # for duplicate detection
-        self.latest_time = {}       # customer_id -> newest event_time seen so far
+        self.latest_time = {}  
+        self.profiles={}     # customer_id -> newest event_time seen so far
 
     def add(self, event):
         """Add one event. Returns 'on_time', 'late', or 'duplicate'."""
